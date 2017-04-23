@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-// import {render} from 'react-dom';
 
-export default class ReactIf extends Component {
+export default class If extends Component {
   constructor(props){
     super(props)
   }
   render() {
-    return (
-      <span style={{display:(this.props.show?'':'none')}}>
-        {this.props.children}
-      </span>
-    );
+    return this.props.show?<span>{this.props.children}</span>:<span></span>
   }
 }

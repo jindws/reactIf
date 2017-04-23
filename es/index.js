@@ -5,26 +5,25 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 import React, { Component } from 'react';
-// import {render} from 'react-dom';
 
-var ReactIf = function (_Component) {
-  _inherits(ReactIf, _Component);
+var If = function (_Component) {
+  _inherits(If, _Component);
 
-  function ReactIf(props) {
-    _classCallCheck(this, ReactIf);
+  function If(props) {
+    _classCallCheck(this, If);
 
     return _possibleConstructorReturn(this, _Component.call(this, props));
   }
 
-  ReactIf.prototype.render = function render() {
-    return React.createElement(
+  If.prototype.render = function render() {
+    return this.props.show ? React.createElement(
       'span',
-      { style: { display: this.props.show ? '' : 'none' } },
+      null,
       this.props.children
-    );
+    ) : React.createElement('span', null);
   };
 
-  return ReactIf;
+  return If;
 }(Component);
 
-export { ReactIf as default };
+export { If as default };
