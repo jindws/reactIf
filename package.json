@@ -1,0 +1,24 @@
+{
+  "name": "reactIf00001",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "jsnext:main": "es/index.js",
+  "module": "es/index.js",
+  "license": "MIT",
+  "files": [
+    "es",
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && npm clean-demo",
+    "start": "nwb serve-react-demo"
+  },
+  "dependencies": {
+    "ks-unlimited-marquee": "^1.0.4",
+    "nwb": "^0.15.6",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
