@@ -1,4 +1,5 @@
 sudo: false
+dist: demo/dist
 
 language: node_js
 node_js:
