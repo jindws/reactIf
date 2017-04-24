@@ -5,4 +5,14 @@ node_js:
   - 4
 
 cache:
-  yarn: true
+  yarn: true,
+  directories:
+    - node_modules
+
+
+before_install:
+  - npm install codecov.io coveralls
+
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
