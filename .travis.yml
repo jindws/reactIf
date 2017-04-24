@@ -9,7 +9,7 @@ cache:
   yarn: true,
   directories:
     - node_modules
-add
+    
 before_install:
   - yarn add codecov.io coveralls
 
