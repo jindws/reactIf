@@ -13,7 +13,7 @@
   "scripts": {
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && npm clean-demo",
-    "demo": "nwb serve-react-demo"
+    "test": "nwb serve-react-demo"
   },
   "dependencies": {
     "ks-unlimited-marquee": "^1.0.4",
