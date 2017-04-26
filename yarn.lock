@@ -3227,10 +3227,6 @@ klaw@^1.0.0:
   optionalDependencies:
     graceful-fs "^4.1.9"
 
-ks-unlimited-marquee@^1.0.4:
-  version "1.0.4"
-  resolved "http://registry.npm.taobao.org/ks-unlimited-marquee/download/ks-unlimited-marquee-1.0.4.tgz#294eb5cdcd34e0951fd775e905af445ed224771f"
-
 lazy-cache@^1.0.3:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/lazy-cache/download/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
