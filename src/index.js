@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-export default React.createClass({
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
+export default class If extends Component {
+  constructor(props){
+    super(props)
   }
-})
+  render() {
+    return this.props.show?<span>{this.props.children}</span>:null
+  }
+}

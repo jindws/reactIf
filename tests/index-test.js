@@ -1,10 +1,11 @@
 import expect from 'expect'
+import assert from 'assert'
 import React from 'react'
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import Component from 'src/'
+import If from 'src/'
 
-describe('Component', () => {
+describe('If', () => {
   let node
 
   beforeEach(() => {
@@ -15,9 +16,14 @@ describe('Component', () => {
     unmountComponentAtNode(node)
   })
 
-  it('displays a welcome message', () => {
-    render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
+  it('hide test', () => {
+    render(<If show={false}>hide</If>, node, () => {
+       assert.equal(node.innerText, '');
+    })
+  })
+  it('show test', () => {
+    render(<If show={true}>show</If>, node, () => {
+       assert.equal(node.innerText, 'show');
     })
   })
 })
