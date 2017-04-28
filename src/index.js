@@ -5,6 +5,10 @@ export default class If extends Component {
     super(props)
   }
   render() {
-    return this.props.show?<span>{this.props.children}</span>:null
+    let children = this.props.children;
+    if(!this.props.children.props){
+      children = <span>{this.props.children}</span>
+    }
+    return this.props.show?children:null
   }
 }

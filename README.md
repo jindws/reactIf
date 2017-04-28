@@ -5,6 +5,6 @@
 ```
 ---
 ```
-<If show={true}>...</If>
-<If show={false}>...</If>
+<If show={true}><span>自己有标签,不做任何修改</span></If>
+<If show={false}>没有标签,嵌套span标签</If>
 ```
